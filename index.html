@@ -17,6 +17,10 @@ title: {{ site.name }}
   pests and monitor their movements. The platform includes two key features - Pest Detection, and Teachable Machine - that work
   together to provide a complete pest control solution.
   
+  hr {
+    width:50%;
+    margin:0 auto;
+  }
 
   <h1>Backround</h1>
   Effective pest control is vital for agricultural industries, as pests can cause significant damage to crops, resulting
@@ -26,7 +30,7 @@ title: {{ site.name }}
   challenges and revolutionize agricultural pest control.
 
   <h1>Key Features</h1>
-  <h2>>1. Pest Detection</h2>
+  <h2>1. Pest Detection</h2>
   The Pest Detection feature lies at the core of PestDetective, utilizing advanced computer vision algorithms to analyze 
   images or video footage and accurately identify pests. Through extensive training on annotated datasets, deep learning 
   models within the platform can recognize a wide range of pests with high accuracy. Real-time monitoring capabilities and 
@@ -35,12 +39,14 @@ title: {{ site.name }}
     <h3>Pest Photo Upload: </h3>
     The Pest Photo Upload feature allows users to upload a photo of a pest and receive instant identification of the type 
     of pest with bounding boxes displayed around it. This feature is useful for identifying pests in crops and fields 
-    for proper control measures. This feature currently detects 5 classes:
+    for proper control measures. This feature currently detects 5 classes: <br>
+    <blockquote>
     Beetles <br>
     Caterpillars <br>
     Snails <br>
     Ants <br>
     Insects <br>
+    </blockquote>
     
     <h3>ESP32 Detection:</h3>
     The ESP32 Detection feature allows users to receive notifications of pest movement detected by an ESP32 device. 
@@ -59,7 +65,7 @@ title: {{ site.name }}
   The platform integrates computer vision libraries, including OpenCV, and powerful deep learning frameworks such as 
   TensorFlow or PyTorch. This integration enables the platform to efficiently process visual data and extract meaningful 
   information for pest identification. <br>
-
+  <br>
   The data preprocessing stage is a crucial step in preparing the large datasets of pest images for training. 
   It involves cleaning the data and annotating it with relevant labels to facilitate supervised learning. By accurately 
   labeling the images with corresponding pest species, the platform can learn from these annotated datasets during the 
