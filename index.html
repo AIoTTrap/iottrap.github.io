@@ -21,6 +21,18 @@ title: {{ site.name }}
     border-radius:25px;
   }
 
+   .centered {
+      text-align: center;
+    }
+
+    .right-aligned {
+      text-align: right;
+    }
+
+    .left-aligned {
+      text-align: left;
+    }
+  
   </style>
 
   <h1>Introduction</h1>
@@ -56,20 +68,27 @@ title: {{ site.name }}
     Insects <br>
     </blockquote>
     
-    <div>
-    <img class="img" src="https://user-images.githubusercontent.com/105019328/236149491-32253d62-48cb-4566-88fe-362854f510d6.png" alt="Preview not available" style="text-align: center;">
+    <div class="centered">
+    <img class="img" src="https://user-images.githubusercontent.com/105019328/236149491-32253d62-48cb-4566-88fe-362854f510d6.png" alt="Preview not available"">
     </div>
 
     <h3>ESP32 Detection:</h3>
     The ESP32 Detection feature allows users to receive notifications of pest movement detected by an ESP32 device. 
-    This feature is particularly useful for monitoring pests in real-time and preventing infestations.</p>
+    This feature is particularly useful for monitoring pests in real-time and preventing infestations.</p> <br>
 
-    <img class="img" src="https://user-images.githubusercontent.com/105019328/236159511-50bec867-bc01-499f-98f9-28db682b5228.jpeg" alt="Preview not available" style="text-align: center; height: 420px; width: 300px;">
+    <div class="centered">
+    <img class="img" src="https://user-images.githubusercontent.com/105019328/236159511-50bec867-bc01-499f-98f9-28db682b5228.jpeg" alt="Preview not available" style= height: 420px; width: 300px;">
+    </div>  
+    
+    <br> <em> Image detected and captured from ESP32: </em> <br>
 
-    Image detected and captured from ESP32:
-    <img class="img" src="https://user-images.githubusercontent.com/105019328/236161393-19995f3b-28e2-4e51-bdd2-30a7ee09fec0.png" alt="Preview not available" style="text-align: center; height: 420px; width: 300px;">
+    <div>
+    <img class="img" src="https://user-images.githubusercontent.com/105019328/236161393-19995f3b-28e2-4e51-bdd2-30a7ee09fec0.png" alt="Preview not available" style= height: 420px; width: 300px;">
+    </div>
 
+    <div class="centered">
     <img class="img" src="https://github.com/AIoTTrap/iottrap.github.io/blob/a2a665f9bf69642117e82399daac9aa073bc9de0/ezgif.com-gif-maker%20(3).gif" alt="">
+    </div>
 
   <h2>2. Teachable Machine</h2>
   The Teachable Machine feature empowers farmers to actively participate in training the AI model to identify specific pests
@@ -113,19 +132,22 @@ title: {{ site.name }}
     Training will be completed once the user receives the model file in their downloads. <br><br>
 
 
-    <em> Note: To test the model, the user simply uploads the recieved TensorFlow model file and the test image. </em>
+    <em> Note: To test the model, the user simply uploads the recieved TensorFlow model file and the test image. </em> <br>
 
-    Visualising training process for ~3000 custom train dataset and ~700 validation dataset (5 classes):
+    Visualising training process for ~3000 custom train dataset and ~700 validation dataset (5 classes): <br>
 
+    <div class="left-aligned">
     <img class="img" src="    https://user-images.githubusercontent.com/105019328/236267437-160916bf-6728-495c-a973-ee59062a822f.png
-    " alt="Preview not available" style="text-align: center; height: 420px; width: 300px;">
-
-
+    " alt="Preview not available" style="text-align: center; height: 500px; width: 320px;">
+    <br>
+    </div>
     Final loss: 0.32% <br>
     Final accuracy: 88.78% <br>
-    <img class="img" src="    https://user-images.githubusercontent.com/105019328/236268354-856a1a45-6744-4586-a53f-4542954c587b.png
-    " alt="Preview not available" style="text-align: center; height: 420px; width: 300px;">
 
+    <div class="right-aligned">
+    <img class="img" src="    https://user-images.githubusercontent.com/105019328/236268354-856a1a45-6744-4586-a53f-4542954c587b.png
+    " alt="Preview not available" style= "height: 500px; width: 350px;">
+    </div>
 
 
     <h3>Training for object detection</h3>
