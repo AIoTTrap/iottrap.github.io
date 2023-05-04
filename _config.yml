@@ -1,6 +1,6 @@
 # Setup
 title:        PestDetective
-tagline:      An AI powered pest control solution - update
+tagline:      An AI powered pest control solution
 baseurl:      "/iottrap.github.io"
 paginate:     1
 locale:       "en"
@@ -8,7 +8,7 @@ locale:       "en"
 # About/contact
 author:
   name:       Manan Luthra
-  url:        http://yourhomepage.com 
+  url:        https://manan-luthra.github.io/
 
 # Gems
 gems:
