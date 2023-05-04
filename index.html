@@ -7,14 +7,50 @@ title: {{ site.name }}
   <!-- <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
   </ul> -->
 
-  <h1>Objective</h1>
-  <p>This is a test</p>
+  <h1>Introduction</h1>
+  PestDetective is an AI-powered tool designed for pest control and management. 
+  This project aims to create a comprehensive platform that utilizes computer vision and machine learning algorithms to identify
+  pests and monitor their movements. The platform includes two key features - Pest Detection, and Teachable Machine - that work
+  together to provide a complete pest control solution.
+  
 
   <h1>Backround</h1>
+  Pest infestations are a major problem in agriculture and can cause significant damage to crops,
+  resulting in reduced yields and increased costs for farmers. Traditional pest control methods are often
+  inefficient and can be harmful to the environment. The use of AI-powered tools such as PestDetective can provide a more
+  effective and sustainable solution for pest control and management.
 
-  <h1>Some other header</h1>
+  <h1>Applications</h1>
+  PestDetective has a wide range of applications across various industries, including agriculture, pest control,
+  and research. Farmers can use PestDetective to identify pests in their crops and fields and implement targeted
+  control measures. Pest control professionals can use PestDetective to monitor pest movement in real-time and
+  provide more effective pest control services. Researchers can use PestDetective to collect data on pest populations
+  and movements for analysis and modeling purposes.
+
+  <h1>Features</h1>
+  <li> Pest photo detection: Users can upload a pest photo, and the YOLOv3 model will detect the type of pest and display
+  bounding boxes around it. </li>
+  <li> ESP32 pest detection: Users can use an ESP32 board with a PIR sensor to detect pest movement, and the YOLOv3 model will
+  detect the type of pest and display bounding boxes around it. </li>
+  <li> Teachable Machine: Users can upload a zip folder of images and train a custom TensorFlow/Keras model to classify pests. 
+  The trained model can then be used to classify new images. </li>
+
+  <br>
+  <p>Pest Photo Upload:
+    The Pest Photo Upload feature allows users to upload a photo of a pest and receive instant identification of the type 
+    of pest with bounding boxes displayed around it. This feature is useful for identifying pests in crops and fields 
+    for proper control measures. This feature currently detects 5 classes:
+    Beetles
+    Caterpillars
+    Snails
+    Ants
+    Insects
+    
+    ESP32 Detection:
+    The ESP32 Detection feature allows users to receive notifications of pest movement detected by an ESP32 device. 
+    This feature is particularly useful for monitoring pests in real-time and preventing infestati</p>
 </div>
