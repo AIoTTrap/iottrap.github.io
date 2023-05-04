@@ -1,7 +1,7 @@
 # Setup
 title:        PestDetective
-tagline:      An AI powered pest control solution 
-baseurl:      iottrap.github.io"
+tagline:      An AI powered pest control solution - update
+baseurl:      "/iottrap.github.io"
 paginate:     1
 locale:       "en"
 
