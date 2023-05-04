@@ -19,28 +19,20 @@ title: {{ site.name }}
   
 
   <h1>Backround</h1>
-  Pest infestations are a major problem in agriculture and can cause significant damage to crops,
-  resulting in reduced yields and increased costs for farmers. Traditional pest control methods are often
-  inefficient and can be harmful to the environment. The use of AI-powered tools such as PestDetective can provide a more
-  effective and sustainable solution for pest control and management.
+  Effective pest control is vital for agricultural industries, as pests can cause significant damage to crops, resulting
+  in economic losses and reduced food production. Traditional pest control methods often face challenges such as labor-intensive
+  processes, delays in pest identification, and limited monitoring capabilities. These shortcomings necessitate the development
+  of an advanced solution that harnesses the power of AI, computer vision, and machine learning algorithms to overcome these
+  challenges and revolutionize agricultural pest control.
 
-  <h1>Applications</h1>
-  PestDetective has a wide range of applications across various industries, including agriculture, pest control,
-  and research. Farmers can use PestDetective to identify pests in their crops and fields and implement targeted
-  control measures. Pest control professionals can use PestDetective to monitor pest movement in real-time and
-  provide more effective pest control services. Researchers can use PestDetective to collect data on pest populations
-  and movements for analysis and modeling purposes.
+  <h1>Key Features</h1>
+  <h2>>1. Pest Detection</h2>
+  The Pest Detection feature lies at the core of PestDetective, utilizing advanced computer vision algorithms to analyze 
+  images or video footage and accurately identify pests. Through extensive training on annotated datasets, deep learning 
+  models within the platform can recognize a wide range of pests with high accuracy. Real-time monitoring capabilities and 
+  an alert system can notify farmers of pest presence, allowing for immediate action to mitigate potential crop damage.
 
-  <h1>Features</h1>
-  <li> Pest photo detection: Users can upload a pest photo, and the YOLOv3 model will detect the type of pest and display
-  bounding boxes around it. </li>
-  <li> ESP32 pest detection: Users can use an ESP32 board with a PIR sensor to detect pest movement, and the YOLOv3 model will
-  detect the type of pest and display bounding boxes around it. </li>
-  <li> Teachable Machine: Users can upload a zip folder of images and train a custom TensorFlow/Keras model to classify pests. 
-  The trained model can then be used to classify new images. </li>
-
-  <br>
-  <h2>Pest Photo Upload: </h2>
+    <h3>Pest Photo Upload: </h3>
     The Pest Photo Upload feature allows users to upload a photo of a pest and receive instant identification of the type 
     of pest with bounding boxes displayed around it. This feature is useful for identifying pests in crops and fields 
     for proper control measures. This feature currently detects 5 classes:
@@ -50,15 +42,28 @@ title: {{ site.name }}
     Ants <br>
     Insects <br>
     
-    <h2>ESP32 Detection:</h2>
+    <h3>ESP32 Detection:</h3>
     The ESP32 Detection feature allows users to receive notifications of pest movement detected by an ESP32 device. 
     This feature is particularly useful for monitoring pests in real-time and preventing infestati</p>
 
-    <h3>Teachable Machine</h3>
-    The Teachable Machine feature allows users to train their own image classification model and customize their
-    pest detection system to their specific needs. This feature is particularly useful for farmers and agriculture
-    researchers who need to identify unique pests or specific stages of pest development. It may also be used for
-    any other classes apart from 'Pests'.
+  <h2>2. Teachable Machine</h2>
+  The Teachable Machine feature empowers farmers to actively participate in training the AI model to identify specific pests
+  relevant to their agricultural settings. Farmers can upload their own images of pests, enabling the system to learn and 
+  adapt to new pest species. The user-friendly interface facilitates the training process, allowing farmers to customize the
+  platform according to their specific needs and optimize pest control strategies accordingly.This system may also be used for
+  any other classes apart from 'Pests'.
+
+
+  <h1>Implementation and Technical Details</h1> 
+  PestDetective utilizes a combination of cutting-edge technologies to deliver its advanced pest control capabilities. 
+  The platform integrates computer vision libraries, including OpenCV, and powerful deep learning frameworks such as 
+  TensorFlow or PyTorch. This integration enables the platform to efficiently process visual data and extract meaningful 
+  information for pest identification. <br>
+
+  The data preprocessing stage is a crucial step in preparing the large datasets of pest images for training. 
+  It involves cleaning the data and annotating it with relevant labels to facilitate supervised learning. By accurately 
+  labeling the images with corresponding pest species, the platform can learn from these annotated datasets during the 
+  training phase. 
 
     The user has to prepare a set of photos in a zip folder. The directory should look like this: <br>
     folder_name/      <br>
@@ -118,4 +123,12 @@ title: {{ site.name }}
 
       (image)
   
+
+      <h1>Applications</h1>
+      PestDetective has a wide range of applications across various industries, including agriculture, pest control,
+      and research. Farmers can use PestDetective to identify pests in their crops and fields and implement targeted
+      control measures. Pest control professionals can use PestDetective to monitor pest movement in real-time and
+      provide more effective pest control services. Researchers can use PestDetective to collect data on pest populations
+      and movements for analysis and modeling purposes.
+
   </div>
