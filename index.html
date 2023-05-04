@@ -32,6 +32,11 @@ title: {{ site.name }}
     .left-aligned {
       text-align: left;
     }
+
+    .text{
+      text-align: left;
+      padding-top: 50px;
+    }
   
   </style>
 
@@ -80,12 +85,12 @@ title: {{ site.name }}
     <img class="img" src="https://user-images.githubusercontent.com/105019328/236159511-50bec867-bc01-499f-98f9-28db682b5228.jpeg" alt="Preview not available" style= "height: 420px; width: 300px;">
     </div>  
     
-    <div class="left-aligned">
+    <div class="text">
     <br> <em> Image detected and captured from ESP32: </em> <br>
     </div>
 
     <div class="right-aligned">
-    <img class="img" src="https://user-images.githubusercontent.com/105019328/236161393-19995f3b-28e2-4e51-bdd2-30a7ee09fec0.png" alt="Preview not available" style= "height: 420px; width: 300px;">
+    <img class="img" src="https://user-images.githubusercontent.com/105019328/236161393-19995f3b-28e2-4e51-bdd2-30a7ee09fec0.png" alt="Preview not available" style= "height: 420px; width: 550px;">
     </div>
 
     <div class="centered">
@@ -97,7 +102,7 @@ title: {{ site.name }}
   relevant to their agricultural settings. Farmers can upload their own images of pests, enabling the system to learn and 
   adapt to new pest species. The user-friendly interface facilitates the training process, allowing farmers to customize the
   platform according to their specific needs and optimize pest control strategies accordingly.
-  
+  <br><br>
   <em>  Note: This system may also be used for
   any other classes apart from 'Pests'. </em>
 
@@ -116,6 +121,7 @@ title: {{ site.name }}
   <h3>Training for image classification</h3>
 
     The user must prepare set of photos in a zip folder. The directory should look like this: <br>
+    <p style="font-size: small;">
     folder_name/      <br>
     |&emsp;  |— class_1_name/   <br>
     |&emsp;  |&emsp;&emsp;   |— image1.jpg     <br>
@@ -128,7 +134,7 @@ title: {{ site.name }}
     |&emsp;  |&emsp;&emsp;   |— image2.jpg     <br>
     |&emsp;  |&emsp;&emsp;   |— image3.jpg     <br>
     |&emsp;  |&emsp;&emsp;   |_ ...  <br><br>
-
+    </p>
     This feature currently trains images for 10 epochs.  <br>
     Once the zip file is submitted, the training will begin. This might take a while. <br>
     Training will be completed once the user receives the model file in their downloads. <br><br>
@@ -136,22 +142,23 @@ title: {{ site.name }}
 
     <em> Note: To test the model, the user simply uploads the recieved TensorFlow model file and the test image. </em> <br>
 
+    <br>
     Visualising training process for ~3000 custom train dataset and ~700 validation dataset (5 classes): <br>
 
     <div class="left-aligned">
     <img class="img" src="    https://user-images.githubusercontent.com/105019328/236267437-160916bf-6728-495c-a973-ee59062a822f.png
-    " alt="Preview not available" style="text-align: center; height: 500px; width: 600px;">
+    " alt="Preview not available" style="text-align: center; height: 400px; width: 500px;">
     <br>
     </div>
 
-    <div class="left-aligned">
+    <div class="text">
     Final loss: 0.32% <br>
     Final accuracy: 88.78% <br>
     </div>
 
     <div class="right-aligned">
     <img class="img" src="    https://user-images.githubusercontent.com/105019328/236268354-856a1a45-6744-4586-a53f-4542954c587b.png
-    " alt="Preview not available" style= "height: 500px; width: 600px;">
+    " alt="Preview not available" style= "height: 400px; width: 500px;">
     </div>
 
 
@@ -182,12 +189,12 @@ title: {{ site.name }}
       The Annotations must be in Pascal VOC XML format. The user may use Roboflow to convert any annotation type. <br>
       Create a .txt file that contains the names of all the classes you want to detect, with each class name on a separate line. <br>
   
-      (image) <br><br>
+      <br><br>
 
+      <em>
       To test the model 
-      Simply upload the Model.tflite file and the test image 
+      Simply upload the Model.tflite file and the test image </em>
 
-      (image)
   
 
       <h1>Applications</h1>
