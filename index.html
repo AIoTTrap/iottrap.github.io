@@ -40,17 +40,82 @@ title: {{ site.name }}
   The trained model can then be used to classify new images. </li>
 
   <br>
-  <p>Pest Photo Upload:
+  <h2>Pest Photo Upload: </h2>
     The Pest Photo Upload feature allows users to upload a photo of a pest and receive instant identification of the type 
     of pest with bounding boxes displayed around it. This feature is useful for identifying pests in crops and fields 
     for proper control measures. This feature currently detects 5 classes:
-    Beetles
-    Caterpillars
-    Snails
-    Ants
-    Insects
+    Beetles <br>
+    Caterpillars <br>
+    Snails <br>
+    Ants <br>
+    Insects <br>
     
-    ESP32 Detection:
+    <h2>ESP32 Detection:</h2>
     The ESP32 Detection feature allows users to receive notifications of pest movement detected by an ESP32 device. 
     This feature is particularly useful for monitoring pests in real-time and preventing infestati</p>
-</div>
+
+    <h3>Teachable Machine</h3>
+    The Teachable Machine feature allows users to train their own image classification model and customize their
+    pest detection system to their specific needs. This feature is particularly useful for farmers and agriculture
+    researchers who need to identify unique pests or specific stages of pest development. It may also be used for
+    any other classes apart from 'Pests'.
+
+    The user has to prepare a set of photos in a zip folder. The directory should look like this: <br>
+    folder_name/      <br>
+    |&emsp;  |— class_1_name/   <br>
+    |&emsp;  |&emsp;&emsp;   |— image1.jpg     <br>
+    |&emsp;  |&emsp;&emsp;   |— image2.jpg     <br>
+    |&emsp;  |&emsp;&emsp;   |— image3.jpg     <br>
+    |&emsp;  |&emsp;&emsp;   |_ ...            <br>
+    |&emsp;  |     <br>
+    |&emsp;  |— class_2_name/   <br>
+    |&emsp;  |&emsp;&emsp;   |— image1.jpg     <br>
+    |&emsp;  |&emsp;&emsp;   |— image2.jpg     <br>
+    |&emsp;  |&emsp;&emsp;   |— image3.jpg     <br>
+    |&emsp;  |&emsp;&emsp;   |_ ...  <br><br>
+
+    This feature currently trains images for 10 epochs. 
+    Once the zip file is submitted, the training will begin. This might take a while.
+    Training will be completed once the user receives the model file in their downloads.
+
+
+    Model Testing:
+    The user simply uploads the TensorFlow model file and the test image. 
+
+    (images)
+
+    <h3>Training for object detection</h3>
+    This feature also allows the user to train a custom model for object detection with bounding boxes.
+    The user should have the following image directory ready: <br>
+    <p style="font-size: small;">
+      <br> |-folder_name
+      <br> | &emsp; |
+      <br> | &emsp; |- train
+      <br> | &emsp; | &emsp;   |
+      <br> | &emsp; | &emsp;   |- image_name1.jpg
+      <br> | &emsp; | &emsp;   |- image_name1.xml
+      <br> | &emsp; | &emsp;   |- image_name2.jpg
+      <br> | &emsp; | &emsp;   |- image_name2.xml
+      <br> | &emsp; | &emsp;   |_ ...
+      <br> | &emsp; |      
+      <br> | &emsp; |- valid
+      <br> | &emsp; | &emsp;   |
+      <br> | &emsp; | &emsp;   |- image_name1.jpg
+      <br> | &emsp; | &emsp;   |- image_name1.xml
+      <br> | &emsp; | &emsp;   |- image_name2.jpg
+      <br> | &emsp; | &emsp;   |- image_name2.xml
+      <br> | &emsp; | &emsp;   |_ ...
+       </p>
+       <br>
+  
+      The Annotations must be in Pascal VOC XML format. The user may use Roboflow to convert any annotation type.
+      Create a .txt file that contains the names of all the classes you want to detect, with each class name on a separate line.
+  
+      (image)
+
+      To test the model 
+      Simply upload the Model.tflite file and the test image 
+
+      (image)
+  
+  </div>
