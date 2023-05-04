@@ -11,6 +11,19 @@ title: {{ site.name }}
     {% endfor %}
   </ul> -->
 
+  .img {
+    width: 400px;
+    height: 200px;
+    border:2px solid #fff;
+    background: url(img/tiger.png) no-repeat;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+  }
+
   <h1>Introduction</h1>
   PestDetective is an AI-powered tool designed for pest control and management. 
   This project aims to create a comprehensive platform that utilizes computer vision and machine learning algorithms to identify
@@ -44,7 +57,7 @@ title: {{ site.name }}
     Insects <br>
     </blockquote>
     
-    <img src="https://user-images.githubusercontent.com/105019328/236149491-32253d62-48cb-4566-88fe-362854f510d6.png" alt="Preview not available" style="box-shadow: inset; border-radius:10px;">
+    <img class="img" src="https://user-images.githubusercontent.com/105019328/236149491-32253d62-48cb-4566-88fe-362854f510d6.png" alt="Preview not available">
     <h3>ESP32 Detection:</h3>
     The ESP32 Detection feature allows users to receive notifications of pest movement detected by an ESP32 device. 
     This feature is particularly useful for monitoring pests in real-time and preventing infestations.</p>
