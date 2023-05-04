@@ -108,6 +108,21 @@ title: {{ site.name }}
 
 
   <h1>Implementation and Technical Details</h1>
+  <h3>Obtaining YOLO weights for PEST DETECTION feature</h3>
+  The YOLOv3 model was trained on a custom dataset of insect images using Darknet, an open-source neural network framework. The Google Open Images Dataset v7 was utilized for downloading the image dataset for insects. The image dataset consisted of .jpg files and corresponding .txt files with matching names. Each line of the .txt file was formatted as follows:
+
+  <br><br>
+  <code>&lt;object-class&gt; &lt;x_center&gt; &lt;y_center&gt; &lt;width&gt; &lt;height&gt;</code>
+  <br><br>
+  The bounding box annotations were converted to the required YOLO format for utilizing the YOLO detector.
+
+  <br>
+  <div class="centered">
+    <img class="img" src="  https://user-images.githubusercontent.com/105019328/236285860-c52d537a-a27a-4601-a1a3-c63ad004d9df.png
+    " alt="">
+    </div>
+
+  <h3>Data Preprocessing for TEACHABLE MACHINE feature</h3>
   PestDetective utilizes a combination of technologies to deliver its pest control capabilities. 
   The platform integrates computer vision libraries, including OpenCV, and powerful deep learning frameworks such as 
   TensorFlow. This integration enables the platform to efficiently process visual data and extract meaningful 
@@ -160,7 +175,7 @@ title: {{ site.name }}
     <img class="img" src="    https://user-images.githubusercontent.com/105019328/236268354-856a1a45-6744-4586-a53f-4542954c587b.png
     " alt="Preview not available" style= "height: 400px; width: 500px;">
     </div>
-
+    <br><br>
     <em> Note: To test the model, the user simply uploads the recieved TensorFlow model file and the test image. </em> <br>
 <br>
     Visualising Testing process:
@@ -197,8 +212,8 @@ title: {{ site.name }}
       The Annotations must be in Pascal VOC XML format. The user may use Roboflow to convert any annotation type. <br>
       Create a .txt file that contains the names of all the classes you want to detect, with each class name on a separate line. <br>
   
-      <br><br>
-
+      <br>
+      <br>
       <em>
       To test the model 
       Simply upload the Model.tflite file and the test image </em>
