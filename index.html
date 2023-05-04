@@ -69,14 +69,16 @@ title: {{ site.name }}
     Image detected and captured from ESP32:
     <img class="img" src="https://user-images.githubusercontent.com/105019328/236161393-19995f3b-28e2-4e51-bdd2-30a7ee09fec0.png" alt="Preview not available" style="text-align: center; height: 420px; width: 300px;">
 
-    <img src="https://github.com/AIoTTrap/iottrap.github.io/blob/a2a665f9bf69642117e82399daac9aa073bc9de0/ezgif.com-gif-maker%20(3).gif" alt="">
+    <img class="img" src="https://github.com/AIoTTrap/iottrap.github.io/blob/a2a665f9bf69642117e82399daac9aa073bc9de0/ezgif.com-gif-maker%20(3).gif" alt="">
 
   <h2>2. Teachable Machine</h2>
   The Teachable Machine feature empowers farmers to actively participate in training the AI model to identify specific pests
   relevant to their agricultural settings. Farmers can upload their own images of pests, enabling the system to learn and 
   adapt to new pest species. The user-friendly interface facilitates the training process, allowing farmers to customize the
-  platform according to their specific needs and optimize pest control strategies accordingly.This system may also be used for
-  any other classes apart from 'Pests'.
+  platform according to their specific needs and optimize pest control strategies accordingly.
+  
+  <em>  Note: This system may also be used for
+  any other classes apart from 'Pests'. </em>
 
 
   <h1>Implementation and Technical Details</h1>
@@ -106,9 +108,9 @@ title: {{ site.name }}
     |&emsp;  |&emsp;&emsp;   |— image3.jpg     <br>
     |&emsp;  |&emsp;&emsp;   |_ ...  <br><br>
 
-    This feature currently trains images for 10 epochs. 
-    Once the zip file is submitted, the training will begin. This might take a while.
-    Training will be completed once the user receives the model file in their downloads.
+    This feature currently trains images for 10 epochs.  <br>
+    Once the zip file is submitted, the training will begin. This might take a while. <br>
+    Training will be completed once the user receives the model file in their downloads. <br><br>
 
 
     <em> Note: To test the model, the user simply uploads the recieved TensorFlow model file and the test image. </em>
@@ -139,10 +141,10 @@ title: {{ site.name }}
        </p>
        <br>
   
-      The Annotations must be in Pascal VOC XML format. The user may use Roboflow to convert any annotation type.
-      Create a .txt file that contains the names of all the classes you want to detect, with each class name on a separate line.
+      The Annotations must be in Pascal VOC XML format. The user may use Roboflow to convert any annotation type. <br>
+      Create a .txt file that contains the names of all the classes you want to detect, with each class name on a separate line. <br>
   
-      (image)
+      (image) <br><br>
 
       To test the model 
       Simply upload the Model.tflite file and the test image 
