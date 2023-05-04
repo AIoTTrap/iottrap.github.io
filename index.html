@@ -64,6 +64,13 @@ title: {{ site.name }}
     The ESP32 Detection feature allows users to receive notifications of pest movement detected by an ESP32 device. 
     This feature is particularly useful for monitoring pests in real-time and preventing infestations.</p>
 
+    <img class="img" src="https://user-images.githubusercontent.com/105019328/236159511-50bec867-bc01-499f-98f9-28db682b5228.jpeg" alt="Preview not available" style="text-align: center; height: 420px; width: 300px;">
+
+    Image detected and captured from ESP32:
+    <img class="img" src="https://user-images.githubusercontent.com/105019328/236161393-19995f3b-28e2-4e51-bdd2-30a7ee09fec0.png" alt="Preview not available" style="text-align: center; height: 420px; width: 300px;">
+
+    <img src="https://github.com/AIoTTrap/iottrap.github.io/blob/a2a665f9bf69642117e82399daac9aa073bc9de0/ezgif.com-gif-maker%20(3).gif" alt="">
+
   <h2>2. Teachable Machine</h2>
   The Teachable Machine feature empowers farmers to actively participate in training the AI model to identify specific pests
   relevant to their agricultural settings. Farmers can upload their own images of pests, enabling the system to learn and 
@@ -73,9 +80,9 @@ title: {{ site.name }}
 
 
   <h1>Implementation and Technical Details</h1>
-  PestDetective utilizes a combination of cutting-edge technologies to deliver its advanced pest control capabilities. 
+  PestDetective utilizes a combination of technologies to deliver its pest control capabilities. 
   The platform integrates computer vision libraries, including OpenCV, and powerful deep learning frameworks such as 
-  TensorFlow or PyTorch. This integration enables the platform to efficiently process visual data and extract meaningful 
+  TensorFlow. This integration enables the platform to efficiently process visual data and extract meaningful 
   information for pest identification. <br>
   <br>
   The data preprocessing stage is a crucial step in preparing the large datasets of pest images for training. 
@@ -83,7 +90,9 @@ title: {{ site.name }}
   labeling the images with corresponding pest species, the platform can learn from these annotated datasets during the 
   training phase. 
 
-    The user has to prepare a set of photos in a zip folder. The directory should look like this: <br>
+  <h3>Training for image classification</h3>
+
+    The user must prepare set of photos in a zip folder. The directory should look like this: <br>
     folder_name/      <br>
     |&emsp;  |— class_1_name/   <br>
     |&emsp;  |&emsp;&emsp;   |— image1.jpg     <br>
@@ -102,8 +111,7 @@ title: {{ site.name }}
     Training will be completed once the user receives the model file in their downloads.
 
 
-    Model Testing:
-    The user simply uploads the TensorFlow model file and the test image. 
+    <em> Note: To test the model, the user simply uploads the recieved TensorFlow model file and the test image. </em>
 
     (images)
 
